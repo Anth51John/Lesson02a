@@ -1,0 +1,54 @@
+{
+    "name": "lesson02",
+    "version": "1.0.0",
+    "description": "Chapter3 coding implemetation ",
+    "main": "template.js",
+    "repository": "https://github.com/Anth51John/Lesson02.git",
+    "author": "Anthony Johnson",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "development": "nodemon",
+        "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+        "start": "NODE_ENV=production node ./dist/server.generated.js"
+    },
+    "engines": {
+        "node": "14.17.0",
+        "npm": "6.14.13"
+    },
+    "dependencies": {
+        "@babel/preset-react": "^7.13.13",
+        "@hot-loader/react-dom": "16.13.0",
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/icons": "^4.11.2",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-jwt": "^6.0.0",
+        "file-loader": "^6.2.0",
+        "helmet": "^4.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "mongodb": "3.5.5",
+        "mongoose": "^5.12.12",
+        "nodemon": "^2.0.7",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-hot-loader": "4.12.20",
+        "react-router-dom": "^5.2.0",
+        "webpack-hot-middleware": "^2.25.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "babel-loader": "^8.2.2",
+        "html-webpack-plugin": "^5.3.1",
+        "html-webpack-template": "^6.2.0",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.0",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-node-externals": "^3.0.0"
+    }
+}
